@@ -1,0 +1,31 @@
+Analysis for python_codebase_summarizer.py:
+Class: CodeAnalyzer
+    Docstring:
+        A visitor class that uses the AST module to analyze Python source code files.
+        Extracts information about functions and classes including their docstrings.
+    Function: __init__ - Args: ['self', 'include_comments']
+    Function: _add_item - Args: ['self', 'item']
+        Docstring:
+            Adds an item to the list of found items, with indentation based on the current scope level.
+    Function: visit_FunctionDef - Args: ['self', 'node']
+        Docstring:
+            Visits a function definition and extracts its name and arguments.
+    Function: visit_ClassDef - Args: ['self', 'node']
+        Docstring:
+            Visits a class definition and extracts its name and docstring if present.
+Function: normalize_path - Args: ['path']
+    Docstring:
+        Normalize a filesystem path for comparison.
+Function: generate_directory_tree - Args: ['path', 'prefix', 'exclude_paths', 'exclude_patterns']
+    Docstring:
+        Generates a directory tree for the given path, excluding specified paths.
+Function: analyze_code - Args: ['source_path', 'include_comments', 'exclude_paths', 'exclude_patterns']
+    Docstring:
+        Analyzes the Python code at the given source path, including or excluding specific files or directories.
+Function: write_to_file - Args: ['data', 'output_file']
+    Docstring:
+        Writes the analyzed data to the specified output file.
+Function: main - Args: []
+    Docstring:
+        Main function that parses arguments and runs the code analyzer.
+
